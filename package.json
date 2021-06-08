@@ -1,0 +1,23 @@
+{
+  "name": "graphile-apps",
+  "version": "0.0.1",
+  "description": "api",
+  "scripts": {
+    "docker-build": "docker-compose build",
+    "docker-run": "docker-compose up",
+    "start": "npm run docker-build && npm run docker-run"
+  },
+  "engines": {
+    "node": "15.x",
+    "npm": "7.x"
+  },
+  "author": "apu",
+  "license": "ISC",
+  "dependencies": {
+    "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
+    "db-migrate": "^0.11.12",
+    "db-migrate-pg": "^1.2.2",
+    "postgraphile": "^4.12.0-alpha.0",
+    "@graphile/pg-aggregates": "^0.1.0"
+  }
+}
